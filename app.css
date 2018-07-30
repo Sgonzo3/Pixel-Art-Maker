@@ -1,40 +1,83 @@
 body {
-  text-align: center;
+    text-align: center;
+    background-color: rgb(70, 70, 70);
+    font-family: Monoton;
+    border: 5px double rgb(227, 227, 227);
+    border-radius: 10px;
+    margin: 2em;
+    padding: 2em;
+    color: rgb(227, 227, 227);
+    box-shadow: 10px 10px 10px black;
 }
 
+/* Heading */
 h1 {
-  font-family: Monoton;
-  font-size: 70px;
-  margin: 0.2em;
+    font-size: 70px;
+    margin: 0.5em;
+    border: 5px double rgb(227, 227, 227);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
 }
 
 h2 {
-  margin: 1em 0 0.25em;
+    margin: 1em 0 0.25em;
 }
 
+
 h2:first-of-type {
-  margin-top: 0.5em;
+    margin-top: 0.5em;
 }
+
 
 table,
 tr,
 td {
-  border: 1px solid black;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 10px 10px 10px black;
+    margin: 2em;
+    max-width: 100%;
+    /* Effects added to change the grid appearence */
 }
+
 
 table {
-  border-collapse: collapse;
-  margin: 0 auto;
+    border-collapse: collapse;
+    margin: 0 auto;
 }
+
 
 tr {
-  height: 20px;
+    height: 20px;
 }
 
+/* Grid Squares */
 td {
-  width: 20px;
+    width: 20px;
+    background-color: rgb(227, 227, 227);
 }
 
-input[type="number"] {
-  width: 6em;
+
+input[type=number] {
+    width: 6em;
+}
+
+
+#colorPicker,
+#inputHeight,
+#inputWidth,
+input[type=submit] {
+  height: 45px;
+  width: 90px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2em;
+  background-color: rgb(227, 227, 227);
+  font-family: Monoton;
+  box-shadow: 10px 10px 10px black;
+  /* effects added to input fields */
+}
+
+#pixelCanvas {
+  margin-bottom: 2em;
 }
